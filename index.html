@@ -123,6 +123,43 @@
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#7fffd4" fill-opacity="1" d="M0,224L34.3,218.7C68.6,213,137,203,206,208C274.3,213,343,235,411,240C480,245,549,235,617,202.7C685.7,171,754,117,823,85.3C891.4,53,960,43,1029,58.7C1097.1,75,1166,117,1234,160C1302.9,203,1371,245,1406,266.7L1440,288L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,
     0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
     <!-- Project End -->
+    
+    <!-- Tilt -->
+<Section id="my-car">
+  <div class="container">
+    <div class="row text-center mb-3">
+      <div class="col">
+        <h2>My Car</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-lg-4 mb-3">
+        <div class="Car-box">
+          <h4 class="Car-name">Skyline R34</h4>
+          <img src="img/gambar_3-removebg-preview.png" class="Car-img" alt="R34">
+          <a href="#" class="btn btn-dark Car-detail-button"> Show Details</a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-3">
+        <div class="Car-box">
+          <h4 class="Car-name">Toyota 86</h4>
+          <img src="img/giordano-rossoni-f8Max9jZfxg-unsplash-removebg-preview.png" class="Car-img" alt="T86">
+          <a href="#" class="btn btn-dark Car-detail-button"> Show Details</a>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 mb-3">
+        <div class="Car-box">
+          <h4 class="Car-name">Mustang GTR</h4>
+          <img src="img/tyler-clemmensen-c7Gay8ttJS0-unsplash-removebg-preview.png" class="Car-img" alt="MGTR">
+          <a href="#" class="btn btn-dark Car-detail-button"> Show Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Section>
+    <!-- Tilt End -->
+
+
 
     <!-- Galery -->
     <div id="galery">
@@ -156,7 +193,6 @@
     
     <!-- Contact Start -->
     
-   
     <section>
       <div class="container " id="contact">
         <div class="row text-center mb-3">
@@ -233,7 +269,6 @@
   gsap.from('.display-4',{duration:1.5, x:-50,opacity:0,delay:0.5, ease:'back'});
   gsap.registerPlugin(TextPlugin);
   gsap.to('.lead',{duration:2,delay:1.5,text:'Mahasiswa | Web Developers | Footballer'});
-
 </script>
 
   
@@ -262,6 +297,17 @@
           }) 
           .catch(error => console.error('Error!', error.message))
       });
+    </script>
+
+    <script type="text/javascript" src="Js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".Car-box"), {
+        max: 35,
+        speed: 400,
+        scale:1.1,
+        glare:true,
+      });
+      
     </script>
   </body>
 </html>
