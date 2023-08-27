@@ -17,3 +17,7 @@ body {
 section {
   padding: 5rem 0 0 0;
 }
+
+#galery .row {
+  padding: 0;
+}
