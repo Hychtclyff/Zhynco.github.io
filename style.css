@@ -2,7 +2,7 @@ body {
   min-height: 200px;
 }
 .jumbotron {
-  padding: 2rem 1 rem;
+  padding-bottom: 1rem;
   background-color: #7fffd4;
 }
 
@@ -14,6 +14,6 @@ body {
   padding-bottom: 20px;
 }
 
-/* section {
-  padding:  0 0 0 0;
-} */
+section {
+  padding: 5rem 0 0 0;
+}
